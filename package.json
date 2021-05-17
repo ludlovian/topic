@@ -1,0 +1,33 @@
+{
+  "name": "topic",
+  "version": "0.0.1",
+  "description": "Pub/sub",
+  "main": "src/index.mjs",
+  "module": "src/index.mjs",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf coverage/ node_modules/.cache/",
+    "lint": "standard {src,test}/*.mjs|snazzy",
+    "format": "prettier-standard {src,test}/*.mjs",
+    "test": "c8 uvu",
+    "coverage": "npm run test && c8 report --reporter=html && sirv coverage/ -p 8000 -H"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludlovian/topic.git"
+  },
+  "author": "",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/ludlovian/topic/issues"
+  },
+  "homepage": "https://github.com/ludlovian/topic#readme",
+  "devDependencies": {
+    "pixutil": "github:ludlovian/pixutil",
+    "uvu": "^0.5.1"
+  },
+  "dependencies": {
+    "pipe": "github:ludlovian/pipe#semver:^2.0.0",
+    "teme": "github:ludlovian/teme#semver:^2.0.0"
+  }
+}
