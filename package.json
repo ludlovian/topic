@@ -1,6 +1,6 @@
 {
   "name": "topic",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Pub/sub",
   "main": "src/index.mjs",
   "module": "src/index.mjs",
